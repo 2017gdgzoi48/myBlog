@@ -1,0 +1,175 @@
+.mainSearch{
+	margin:20px;
+}
+.mainSearch img{
+	vertical-align: bottom;
+	cursor: pointer;
+}
+.mainSearch form input:nth-child(2){
+	border: none;
+	border-bottom: 2px solid #0096D6;
+	background-color: inherit;
+	height: 50px;
+	font-size: 45px;
+	line-height: 50px;
+	text-indent: 10px;
+	color: #307DC8;
+	padding: 0;
+	width: 400px;
+}
+.mainSearch form{
+	text-align: center;
+}
+.mainSearch form input:nth-child(2):focus{
+	outline: none;
+}
+.turner{
+	color: #307DC8;
+	text-align:right;
+	font-size: 15px;
+	margin-left: auto;
+	display: block;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.turner:hover{
+	text-decoration: underline;
+}
+.turner>img{
+	display: inline;
+	vertical-align: bottom;
+}
+.line{
+	background-color: #3A6590;
+	width: 70%;
+	height: 3px;
+	display: block;
+	margin: 20px auto;
+}
+.highSearch{
+	border: 2px solid lightblue;
+	padding: 10px;
+	margin-top:10px;
+}
+.waytitle{
+	font-size: 15px;
+	color: #307DC8;
+	font-weight: bold;
+	padding-right: 10px;
+	border-right: 3px solid #307DC8;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+.wayitem{
+	color:grey;
+	margin-right:10px;
+	padding: 3px;
+	cursor: pointer;
+}
+.waySelect{
+	background-color: lightblue;
+	border-radius: 5px;
+	transition:background-color 1s;
+}
+.result{
+	box-shadow: 0 0 4px black;
+	width: 90%;
+	height: auto;
+	margin-right: 3%;
+	margin-left: 3%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	background-color: white;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	word-break: break-all;
+	text-decoration: none;
+	color:inherit;
+}
+.result:hover{
+	transform: scale(1.05,1.05);
+	transition: 0.1s;
+}
+.resTitle{
+	font-weight: bold;
+	font-size: 30px;
+	display: block;
+}
+.resTitle[data-type="1"]:before{
+	content: "博客";
+	background-color: #45b3e0;
+	color: white;
+	margin-right: 5px;
+	font-size: 20px;
+	padding: 5px;
+}
+.resTitle[data-type="2"]:before{
+	content: "专栏";
+	background-color: #45b3e0;
+	color: white;
+	margin-right: 5px;
+	font-size: 20px;
+	padding: 5px;
+}
+.resTitle[data-type="3"]:before{
+	content: "下载";
+	background-color: #45b3e0;
+	color: white;
+	margin-right: 5px;
+	font-size: 20px;
+	padding: 5px;
+}
+.tinytag{
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	background-color: #1e90ff;
+	margin: 5px;
+	display: inline-block;
+}
+.tinytag:hover{
+	background-color: #78bcff;
+	transition: 0.3s;
+}
+.info{
+	display: block;
+	list-style: none;
+	color: grey;
+	font-size: 17px;
+	margin: 5px;
+	padding:0;
+	padding-right:10px; 
+}
+.info li{
+	display: inline;
+	padding-right:10px; 
+}
+.info li:nth-child(1):before{
+	content: url("/res/img/ico/author.png")" ";
+}
+.info li:nth-child(2):before{
+	content: url("/res/img/ico/fire.png")" ";
+}
+.info li:nth-child(3):before{
+	content: url("/res/img/ico/date.png")" ";
+}
+.main{
+	column-count: 3;
+	column-width: 33%;
+	padding: 20px;
+}
+.empty{
+	font-size: 40px;
+	color: #1e90ff;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.empty:before{
+	content: "暂时没有搜索结果哦~";
+}

@@ -1,0 +1,276 @@
+.main{
+	display: flex;
+}
+.leftside{
+	flex: 70;
+	margin: 20px;
+	word-break: break-all;
+}
+.rightside{
+	flex: 30;
+	margin:20px;
+}
+.title{
+	font-size: 35px;
+	font-weight: bolder;
+	line-height: 36px;
+}
+.info{
+	display: block;
+	list-style: none;
+	color: grey;
+	margin: 5px;
+	padding:0;
+}
+.info li{
+	display: inline;
+	padding-right:10px; 
+}
+.info li:nth-child(1):before{
+	content: url("/res/img/ico/author.png")" 作者：";
+}
+.info li:nth-child(2):before{
+	content: url("/res/img/ico/fire.png")" 阅读量：";
+}
+.info li:nth-child(3):before{
+	content: url("/res/img/ico/date.png")" 日期：";
+}
+.info li:nth-child(5):before{
+	content: url("/res/img/ico/tinytag.png")" 标签：";
+}
+.line{
+	background-color: #3A6590;
+	width: 100%;
+	height: 3px;
+	display: block;
+}
+.content{
+	text-indent: 40px;
+	font-size: 20px;
+	margin: 10px;
+}
+.userInfo{
+	background: white;
+	text-decoration: none;
+	box-shadow: 0 0 4px black;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	word-break: break-all;
+	padding-right:10px; 
+}
+.userInfo:first-child img{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	box-shadow: 0 0 4px black;
+	margin: 20px auto;
+	display: inline-block;
+}
+.author{
+	display: block;
+	font-size: 25px;
+}
+.author:not(:first-child):after{
+	content: " 的博客";
+}
+.ui{
+	color: grey;
+	padding: 10px;
+	margin-top: 0;
+	font-size: 20px;
+	display: block;
+	list-style: none;
+}
+.ui li{
+	display: inline-block;
+}
+.ui :nth-child(1):before{
+	content: "博客: ";
+}
+.ui :nth-child(2):before{
+	content: "专栏: ";
+}
+.ui :nth-child(3):before{
+	content: "下载: ";
+}
+.control{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	opacity: 0.8;
+	border-radius: 5px;
+}
+.contr{
+	background-color: grey;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	transition: 1s;
+}
+.contr img{
+	height: 40px;
+	width: 40px;
+	padding:5px;
+	margin: auto;
+	display:block;
+}
+.contr:hover{
+	background-color: lightgrey;
+}
+.comment{
+	display: block;
+	font-size: 20px;
+	margin: 5px 5%;
+	border-top: 3px dashed grey;
+}
+.comment img{
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	margin-top: 7.5px;
+	padding: 0;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 3px solid #307DC8;
+}
+.comment span{
+	margin: auto;
+	vertical-align: middle;
+	display: inline;
+	word-break: break-all;
+	line-height: 31px;
+}
+.comment form{
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+}
+.comment textarea{
+	resize: none;
+	border: none;
+	border-bottom: 2px solid #0096D6;
+	height: 22px;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 22px;
+	text-indent: 10px;
+	background-color: #e8f0fe;
+	height: 25px;
+	width: 700px;
+	transition: 1s;
+	font-weight: bold;
+}
+.comment textarea:focus{
+	outline: none;
+	height: 400px;
+}
+.comment button{
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #307DC8;
+	height: 25px;
+	line-height: 25px;
+	transition: 1s;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.comment button:hover{
+	background-color: skyblue;
+}
+.comment button:focus{
+	outline: none;
+}
+.choose{
+	text-align: right;
+	width: 150px;
+	height: 20px;
+	display: inline;
+}
+.chLike{
+	margin-left: calc(95% - 200px);
+	padding: 5px;
+	background-color: #307DC8;
+	color:white;
+	cursor: pointer;
+	display: inline;
+	transition: 1s;
+}
+.chLike:hover{
+	background-color: skyblue;
+}
+.chLike:before{
+	content: url("/../../res/img/ico/like-empty.png")"　";
+}
+.fulllike:before{
+	content: url("/../../res/img/ico/like-full.png")"　";
+}
+.chDislike{
+	padding: 5px;
+	background-color: rgba(255,255,255,0.5);
+	color: #307DC8;
+	cursor: pointer;
+	display: inline;
+	transition: 1s;
+}
+.chDislike:hover{
+	background-color: white;
+}
+.chDislike:after{
+	content: "　"url(/../../res/img/ico/dislike-empty.png);
+}
+.fulldislike:after{
+	content: "　"url(/../../res/img/ico/dislike-full.png);
+}
+.tinytag{
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	background-color: #1e90ff;
+	margin: 5px;
+	display: inline-block;
+}
+.tinytag:hover{
+	background-color: #78bcff;
+	transition: 0.3s;
+}
+.wayitem{
+	margin-top: 3px;
+	color:grey;
+	margin-right:10px;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 1s;
+	display: inline-block;
+}
+.wayitem:hover{
+	background-color: lightblue;
+}
+.bookcontent{
+	color: #0096D6;
+	counter-reset: section;
+	list-style: none;
+	padding-left: 40px;
+	text-align: left;
+	font-size: 20px;
+}
+.bookcontent li:before{
+	list-style-type: none;
+	counter-increment: section;
+	content: counters(section , '.')'.';
+}
+.bookcontent a {
+	color: inherit;
+	text-decoration: none;
+}
+.bookcontent a:hover{
+	color: skyblue;
+}

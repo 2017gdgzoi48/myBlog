@@ -1,0 +1,65 @@
+.formtitle{
+	text-align:center;
+	padding: 20px;
+	margin:0;
+}
+.formpart{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.formitem{
+	display: inline-block;
+	padding: 10px;
+	height:40px;
+}
+.formitem input:not([type="file"]){
+	border: none;
+	border-bottom: 2px solid #0096D6;
+	height: 22px;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 22px;
+	text-indent: 10px;
+	background-color: #e8f0fe;
+}
+.formitem input:focus{
+	outline: none;
+}
+.form{
+	text-align: center;
+	width: auto;
+	display: inline-block;
+}
+.formdesc{
+	margin-right: 20px;
+	vertical-align: bottom;
+}
+.submitButton{
+	text-align: center;
+	margin:20px auto;
+	margin-right: 20px;
+	display: inline;
+}
+.linkButton:hover:after{
+	content: "";
+}
+.formitem textarea{
+	resize: none;
+	border: none;
+	border-bottom: 2px solid #0096D6;
+	height: 22px;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 22px;
+	text-indent: 10px;
+	background-color: #e8f0fe;
+	height: 25px;
+	width: 700px;
+	font-weight: bold;
+	height: 400px;
+}
+.formitem textarea:focus{
+	outline: none;
+}

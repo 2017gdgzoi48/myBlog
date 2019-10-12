@@ -1,0 +1,48 @@
+.header{
+	display: inline-block;
+	width: 65%;
+	margin:20px;
+}
+.biguimg{
+	height: 50px;
+	width: 50px;
+	border: 10px double #307DC8;
+	margin: 20px;
+	margin-left: 100px;
+	display: inline;
+	vertical-align: middle;
+}
+.smalluimg{
+	height: 20px;
+	width: 20px;
+	margin-left: 10px;
+}
+.infolist{
+	list-style: none;
+	color: #74B9FF;
+	display: block;
+}
+.infolist li{
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+:first-child>.infolist li:nth-child(1):before{
+	content: url("/../../../res/img/ico/id.png")"　　用户id:";
+}
+:first-child>.infolist li:nth-child(2):before{
+	content: url("/../../../res/img/ico/name.png")"　　用户名:";
+}
+:first-child>.infolist li:nth-child(3):before{
+	content: url("/../../../res/img/ico/email.png")"　　用户邮箱:";
+}
+:first-child>.infolist li:nth-child(4):before{
+	content: url("/../../../res/img/ico/uimg.png")"　　用户头像:";
+}
+:first-child>.infolist li:nth-child(5):before{
+	content: url("/../../../res/img/ico/key.png")"　　用户权限等级:";
+}
+.anotherpart .title:after{
+	content: " "url("/../../../res/img/ico/favor.png");
+	vertical-align: middle;
+}

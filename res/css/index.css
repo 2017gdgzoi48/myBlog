@@ -1,0 +1,107 @@
+.main{
+	display: flex;
+}
+.part{
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	border-right: 10px double #4CA3DD;
+	flex: 65;
+}
+.anotherpart{
+	display: inline-block;
+	margin:10px 10px 10px 0;
+	text-align: left;
+	flex: 35;
+}
+.tinypart{
+	margin: 10px;
+	padding: 10px;
+	border: grey solid 2px;
+}
+.title{
+	color: #307DC8;
+	font-size: 30px;
+	font-weight: bold;
+}
+.tinytitle{
+	color: #307DC8;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+}
+.line{
+	background-color: #3A6590;
+	width: 100%;
+	height: 3px;
+	display: block;
+}
+.content{
+	font-size: 20px;
+	color: #1281AF;
+	word-break: break-all;
+	display: inline-block;
+	margin-top: 10px;
+}
+:first-child>.content{
+	text-indent: 30px;
+}
+.linkButton{
+	display: block;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	background-color: #307DC8;
+	line-height: 40px;
+	text-align: center;
+	font-style: italic;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: auto;
+}
+.linkButton:hover:after{
+	content: ">";
+}
+.linkButton:hover{
+	background-color: skyblue;
+	transition: 1s;
+}
+.rank{
+	color:#1281AF; 
+	counter-reset: li;
+	list-style: none;
+}
+.rank li:before{
+	content: '#';
+}
+.rank li a{
+	text-decoration: none;
+	color:#1281AF;
+}
+:nth-child(3)>.rank li a:after{
+	content: "  "url("/res/img/ico/fire.png")"  ";
+}
+:not(:nth-child(3))>.rank li a:after{
+	content: "  "url("/res/img/ico/date.png")"  ";
+}
+.rank li a:hover{
+	color:skyblue;
+	transition: 1s;
+}
+.rank li:before{
+	content: "Rank#"counter(li)"  ";
+	counter-increment: li;
+}
+.info{
+	color: grey;
+	font-size: 15px;
+}
+.card{
+	border: 2px solid #808080;
+	padding: 10px;
+	margin-top:10px;
+}
+.card img{
+	vertical-align:sub;
+}

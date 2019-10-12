@@ -1,0 +1,53 @@
+.block{
+	margin: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	border-left: 4px solid grey;
+	background-color: lightgrey;
+	font-style: italic;
+	display: inline-block;
+	width: auto;
+}
+.op{
+	color:#1a8e8e;
+}
+.string{
+	color:#32CD32;
+}
+.num{
+	color: #1ab31a;
+}
+.name{
+	color:orangered;
+}
+.other{
+	color:orange;
+}
+.comment {
+	color: grey; 
+}
+.comment span{
+	color: grey; 
+}
+.keywords{
+	color: purple;
+	font-weight: bold;
+}
+.keywords span{
+	color: purple;
+	font-weight: bold;
+}
+code:not([data-type="1"]){
+	border: 2px solid #CCCCCC;
+	border-radius: 5px;
+	width: auto;
+	background-color: white;
+	display: block;
+	padding: 5px;
+}
+code[data-type="1"]{
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+	padding: 3px;
+}

@@ -1,0 +1,1 @@
+<div class="footer">Copyright &copy 2019 <?php echo $blogUrl; ?> All rights reserved.</div>

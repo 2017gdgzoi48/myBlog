@@ -1,0 +1,96 @@
+.guide{
+	padding:0px;
+	width:100%;
+	background-color:#307DC8;
+	margin-left:0px;
+	margin-top:0px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+}
+.guide:first-child{
+	box-shadow: 3px 0px 10px black;
+}
+span[class*="guide"] {
+	background-color:#307DC8;
+	padding:0px;
+	margin:0px;
+	color:white;
+	height:40px;
+	width:auto;
+	line-height:40px;
+	word-break:keep-all;
+	white-space:nowrap;
+	transition:0.5s;
+}
+span.guideNav:hover {
+	/*background-color:#3A6590;*/
+	background-color: white;
+	color: #307DC8;
+}
+span.guideNav {
+	padding:0px 10px;
+	font-size:20px;
+	font-family:"楷体";
+	text-align:center;
+	width:auto;
+}
+span.guideTitle {
+	margin-left:0px;
+	padding:0px 15px;
+	font-size:30px;
+	font-family:"Consolas";
+}
+ul.guideDetials {
+	margin:0px;
+	padding:0px;
+	height:auto;
+	width:100%;
+	transition:background-color 1s;
+	list-style:none;
+	padding:0px 0px;
+	border-radius:5px;
+	position: relative;
+	z-index: 2;
+}
+ul.guideDetials li{
+	transition:background-color 1s;
+	color:#307DC8;
+	background-color:rgba(0,0,0,0.1);
+	/*background-color:grey;*/
+	height:30px;
+	width:auto;
+	padding-right:5px;
+	padding-left:10px;
+	font-size:20px;
+	font-family:"楷体";
+	line-height:30px;
+	border-radius:5px;
+}
+ul.guideDetials li:hover {
+	background-color:rgba(255,255,255,0.5);
+	border-radius:5px;
+}
+div.guide:first-child>span:not(:first-child):hover::before {
+	content:">>>";
+	font-size:x-small;
+	transition:1s;
+}
+ul.guideDetials li:hover::before {
+	content:">>>";
+	font-size:x-small;
+	transition:1s;
+}
+span.nowPage{
+	border-top: 3px solid #2EF2D8;
+	height: 37px;
+	line-height: 34px;
+}
+.guideDetials li a{
+	color:#307DC8;
+	text-decoration: none;
+}
+.guideNav a{
+	color: inherit;
+	text-decoration: none;	
+}
